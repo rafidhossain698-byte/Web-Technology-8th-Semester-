@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Lab Task 04 - HTML Forms">
+    <title>Lab Task 04</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Student Registration Form</h1>
+        <hr>
+    </header>
+
+    <!-- Form Start -->
+    <form action="#" method="post">
+
+        <!-- Personal Information -->
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <!-- Full Name -->
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" required>
+            <br><br>
+
+            <!-- Email -->
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+            <br><br>
+
+            <!-- Password -->
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <br><br>
+
+            <!-- Date of Birth -->
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+            <br><br>
+
+            <!-- Gender -->
+            <label>Gender:</label><br>
+
+            <input type="radio" id="male" name="gender" value="Male" required>
+            <label for="male">Male</label><br>
+
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label><br>
+
+        </fieldset>
+
+        <br>
+
+        <!-- Academic Information -->
+        <fieldset>
+            <legend>Academic Information</legend>
+
+            <!-- Department -->
+            <label for="department">Department:</label>
+            <select id="department" name="department" required>
+                <option value="">Select Department</option>
+                <option>CSE</option>
+                <option>EEE</option>
+                <option>CS</option>
+                <option>BBA</option>
+                <option>Pharmacy</option>
+            </select>
+
+            <br><br>
+
+            <!-- Skills -->
+            <label>Skills:</label><br>
+
+            <input type="checkbox" id="html" name="skills" value="HTML">
+            <label for="html">HTML</label><br>
+
+            <input type="checkbox" id="java" name="skills" value="Java">
+            <label for="java">Java</label><br>
+
+            <input type="checkbox" id="python" name="skills" value="Python">
+            <label for="python">Python</label><br>
+
+            <input type="checkbox" id="cpp" name="skills" value="C++">
+            <label for="cpp">C++</label>
+
+        </fieldset>
+
+        <br>
+
+        <!-- Form Controls -->
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+
+    </form>
+</body>
+</html>
