@@ -1,0 +1,15 @@
+/* Universal Selector */
+* {
+    font-family: Arial, sans-serif;
+}
+
+/* Element Selector */
+p {
+    color: darkred;
+    font-size: 16px;
+}
+
+/* Background */
+body {
+    background-color: #f5f5f5;
+}

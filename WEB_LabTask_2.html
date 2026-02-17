@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="description" content="Lab Task 02 - Lists, Links, Images, and Attributes">
     <title>Lab Task 02</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="WEB_LabTask_2.css">
 </head>
 
 <body>
@@ -12,74 +15,79 @@
     <!-- Page Heading -->
     <h1 id="top" title="Main Page Heading">Web Development Basics</h1>
 
-    <!-- Part A: Lists -->
-    <h2>Programming Languages</h2>
+    <div>
+        <!-- Part A: Lists -->
+        <h2>Programming Languages</h2>
 
-    <!-- Unordered List -->
-    <ul class="language-list">
-        <li>Python</li>
-        <li>Java</li>
-        <li>C++</li>
-        <li>JavaScript</li>
-        <li>C#</li>
-    </ul>
+        <ul class="language-list">
+            <li>Python</li>
+            <li>Java</li>
+            <li>C++</li>
+            <li>JavaScript</li>
+            <li>C#</li>
+        </ul>
 
-    <h2>Steps to Build a Website</h2>
+        <h2>Steps to Build a Website</h2>
 
-    <!-- Ordered List -->
-    <ol>
-        <li>Plan website structure</li>
-        <li>Create HTML layout</li>
-        <li>Styling using CSS</li>
-        <li>Add functionality using JavaScript</li>
-        <li>Deploy the website online</li>
-    </ol>
+        <ol>
+            <li>Plan website structure</li>
+            <li>Create HTML layout</li>
+            <li>Styling using CSS</li>
+            <li>Add functionality using JavaScript</li>
+            <li>Deploy the website online</li>
+        </ol>
 
-    <h2>Web Technologies Description</h2>
+        <h2>Web Technologies Description</h2>
 
-    <!-- Description List -->
-    <dl>
-        <dt>HTML</dt>
-        <dd>Used to create the structure of web pages.</dd>
-        <dt>CSS</dt>
-        <dd>Used to design and style web pages.</dd>
-        <dt>JavaScript</dt>
-        <dd>Used to add interactivity to web pages.</dd>
-    </dl>
+        <dl>
+            <dt>HTML</dt>
+            <dd>Used to create the structure of web pages.</dd>
+            <dt>CSS</dt>
+            <dd>Used to design and style web pages.</dd>
+            <dt>JavaScript</dt>
+            <dd>Used to add interactivity to web pages.</dd>
+        </dl>
+    </div>
+
     <hr>
 
-    <!-- Part B: Links -->
+    <!-- Links -->
     <h2>Useful Links</h2>
 
-    <!-- External Link -->
     <p>
         University website:
         <a href="https://www.aiub.edu" target="_blank" title="University Website">
-        AIUB Official Website
+            AIUB Official Website
         </a>
     </p>
 
-    <!-- Internal Anchor Link -->
     <p>
         <a href="#imageSection">Jump to Image Section</a>
     </p>
+
     <hr>
 
-    <!-- Part C: Images -->
+    <!-- Image Section -->
     <section id="imageSection">
-
-        <!-- Sample Image Section -->
         <h2>Sample Image</h2>
 
-        <img src="images.png"
-        alt="AIUB Campus" width="400" title="Example Image">
+        <img src="images.png" alt="AIUB Campus" width="400" title="Example Image">
     </section>
+
     <hr>
 
-    <!-- Back to Top Link -->
+    <!-- Form Section (for attribute selector and pseudo classes) -->
+    <h2>Contact Form</h2>
+
+    <input type="text" placeholder="Enter your name">
+    <button>Submit</button>
+
+    <hr>
+
     <p>
         <a href="#top">Back to Top</a>
     </p>
 
 </body>
+
 </html>

@@ -1,0 +1,77 @@
+/* ----------------------
+   CSS Units Section
+---------------------- */
+
+/* Group Selector */
+h1,
+h2 {
+    font-family: Arial, sans-serif;
+    color: rgb(37, 107, 128);
+}
+
+/* Absolute Unit (px) */
+h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+/* Relative Unit (rem) */
+h2 {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+}
+
+/* Descendant Selector */
+div p {
+    color: darkgreen;
+}
+
+/* Absolute Unit (cm) */
+img {
+    width: 10cm;
+    height: auto;
+}
+
+/* Percentage Unit */
+.language-list {
+    width: 60%;
+}
+
+/* em Unit */
+li {
+    font-size: 1.1em;
+}
+
+/* vh Unit */
+body {
+    min-height: 100vh;
+    padding: 2%;
+}
+
+/* Attribute Selector */
+input[type="text"] {
+    padding: 10px;
+    font-size: 1rem;
+    width: 50%;
+}
+
+/* ----------------------
+   Pseudo Classes
+---------------------- */
+
+/* Hover */
+a:hover {
+    color: red;
+}
+
+/* Focus */
+input[type="text"]:focus {
+    background-color: lightyellow;
+    outline: 2px solid blue;
+}
+
+/* Active */
+button:active {
+    background-color: green;
+    color: white;
+}
