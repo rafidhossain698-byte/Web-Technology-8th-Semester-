@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Record System</title>
+    <link rel="stylesheet" href="WEB_LabTask_6(DOM).css">
+</head>
+
+<body>
+
+    <h1>Student Record Manager</h1>
+
+    <section>
+
+        <h3>Add New Student</h3>
+
+        <form id="form-student">
+
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Student name">
+            </div>
+
+            <div>
+                <label for="roll">Roll Number:</label>
+                <input type="text" id="roll" placeholder="Student roll number">
+            </div>
+
+            <br>
+
+            <button type="submit" id="btn-add" disabled>Add Student</button>
+
+        </form>
+
+    </section>
+
+    <br>
+
+    <section>
+
+        <input type="text" id="search-box" placeholder="Search by name or roll">
+
+        <h2>Student Records</h2>
+
+        <ul id="list" class="student-list"></ul>
+
+        <p id="count">Total Students: 0</p>
+
+        <p id="status">Present: 0 | Absent: 0</p>
+
+        <button id="btn-sort">Sort Alphabetically</button>
+
+        <button id="btn-highlight">Highlight Top Student</button>
+
+    </section>
+
+    <script src="WEB_LabTask_6(DOM).js"></script>
+
+</body>
+
+</html>

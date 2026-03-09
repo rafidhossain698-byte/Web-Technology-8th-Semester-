@@ -1,0 +1,126 @@
+/* Reset default browser spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Page styling */
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #eef1f4;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Main title */
+h1 {
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* Form layout */
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+/* Input fields */
+input {
+    padding: 9px 12px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    outline: none;
+    font-size: 14px;
+}
+
+/* Input focus effect */
+input:focus {
+    border-color: #2196f3;
+    box-shadow: 0 0 3px rgba(33, 150, 243, 0.4);
+}
+
+/* Button style */
+button {
+    padding: 9px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #4caf50;
+    color: white;
+    transition: 0.25s;
+}
+
+/* Hover effect */
+button:hover {
+    opacity: 0.9;
+    transform: scale(1.03);
+}
+
+/* Student list container */
+#student-list {
+    list-style-type: none;
+    width: 520px;
+    max-width: 100%;
+    margin-top: 12px;
+}
+
+/* Individual student item */
+.student-item {
+    background: #ffffff;
+    padding: 14px;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 7px;
+    border: 1px solid #dcdcdc;
+}
+
+/* Text area inside item */
+.student-item span {
+    flex-grow: 1;
+}
+
+/* Edit button */
+.btn-edit {
+    background: #2196f3;
+    color: #fff;
+    margin-left: 8px;
+}
+
+/* Delete button */
+.btn-delete {
+    background: #e53935;
+    color: #fff;
+    margin-left: 6px;
+}
+
+/* Present student highlight */
+.present {
+    background: #c8f7f2;
+}
+
+/* Highlight first student */
+.highlight {
+    border: 3px solid #00c4a7;
+}
+
+/* Counters */
+#total,
+#attendance {
+    margin-top: 12px;
+    font-weight: 600;
+    color: #444;
+}
+
+/* Bottom buttons */
+#sort-btn,
+#highlight-btn {
+    margin-top: 12px;
+}

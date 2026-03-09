@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Lab Task 02 - Functions, Loops, and String Operations">
+    <title>Lab Task 02</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: rgb(37, 107, 128);
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: teal;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            display: block;
+            margin: 20px auto;
+        }
+
+        button:hover {
+            background-color: darkcyan;
+        }
+
+        .result-box {
+            background-color: white;
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px lightgray;
+        }
+
+        .section {
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-left: 5px solid teal;
+        }
+
+        .section h3 {
+            margin-top: 0;
+            color: teal;
+        }
+
+        .number-box {
+            display: inline-block;
+            margin: 4px;
+            padding: 6px 10px;
+            background-color: lightblue;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>JavaScript Lab Task 02</h1>
+
+    <button onclick="runLab()">Run JavaScript Task</button>
+
+    <div id="output" class="result-box"></div>
+
+    <script>
+
+        function runLab() {
+
+            let result = "";
+
+            // =========================
+            // Part A: Function
+            // =========================
+            function calculateSum(a, b) {
+                return a + b;
+            }
+
+            let sum = calculateSum(10, 20);
+
+            result += `
+    <div class="section">
+        <h3>Part A: Function</h3>
+        <p>Sum of 10 and 20 is <strong>${sum}</strong></p>
+    </div>
+    `;
+
+
+            // =========================
+            // Part B: Loops
+            // =========================
+
+            result += `<div class="section">
+                <h3>Part B: For Loop (1 to 10)</h3>`;
+
+            for (let i = 1; i <= 10; i++) {
+                result += `<span class="number-box">${i}</span>`;
+            }
+
+            result += `</div>`;
+
+
+            result += `<div class="section">
+                <h3>While Loop (Even numbers 1 to 20)</h3>`;
+
+            let num = 2;
+            while (num <= 20) {
+                result += `<span class="number-box">${num}</span>`;
+                num += 2;
+            }
+
+            result += `</div>`;
+
+
+            // =========================
+            // Part C: String Operations
+            // =========================
+
+            let fullName = "Rafid Hossain";
+            let upperName = fullName.toUpperCase();
+            let length = fullName.length;
+            let firstName = fullName.split(" ")[0];
+
+            result += `
+    <div class="section">
+        <h3>Part C: String Operations</h3>
+        <p><strong>Original Name:</strong> ${fullName}</p>
+        <p><strong>Uppercase:</strong> ${upperName}</p>
+        <p><strong>Length:</strong> ${length}</p>
+        <p><strong>First Name:</strong> ${firstName}</p>
+    </div>
+    `;
+
+
+            // =========================
+            // Part D: Function with User Input
+            // =========================
+
+            function checkString() {
+                let input = prompt("Enter a word:");
+
+                if (input.length > 5) {
+                    return "The string length is greater than 5.";
+                } else {
+                    return "The string length is 5 or less.";
+                }
+            }
+
+            let message = checkString();
+
+            result += `
+    <div class="section">
+        <h3>Part D: String Length Check</h3>
+        <p>${message}</p>
+    </div>
+    `;
+
+            document.getElementById("output").innerHTML = result;
+        }
+
+    </script>
+
+</body>
+
+</html>

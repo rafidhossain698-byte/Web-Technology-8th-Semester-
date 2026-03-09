@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Lab Task 01</title>
+
+    <style>
+        body {
+            background-color: #f5f5f5;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            color: darkblue;
+        }
+
+        .box {
+            background-color: white;
+            padding: 20px;
+            margin: 20px auto;
+            width: 400px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px lightgray;
+        }
+
+        button {
+            padding: 8px 15px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
+        p {
+            color: darkred;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>JavaScript Lab Task 01</h1>
+
+    <div class="box">
+        <h3>Output Section</h3>
+        <div id="output"></div>
+    </div>
+
+    <button onclick="runLab()">Run JavaScript Task</button>
+
+    <script>
+
+        function runLab() {
+
+            // =====================
+            // Part A: Basic Output
+            // =====================
+
+            alert("Welcome to JavaScript Lab Task 01!");
+            console.log("JavaScript is working!");
+
+            let result = "<h3>Welcome Message Printed Successfully!</h3>";
+
+            // =====================
+            // Part B: Variables
+            // =====================
+
+            let studentName = "Rafid Hossain";
+            let studentAge = 21;
+            let nextYearAge = studentAge + 1;
+
+            result += "<p>My name is " + studentName +
+                " and I am " + studentAge + " years old.</p>";
+
+            result += "<p>Next year I will be " + nextYearAge + " years old.</p>";
+
+            // =====================
+            // Part C: User Input
+            // =====================
+
+            let num1 = Number(prompt("Enter first number:"));
+            let num2 = Number(prompt("Enter second number:"));
+
+            let sum = num1 + num2;
+            let difference = num1 - num2;
+            let product = num1 * num2;
+
+            result += "<h3>Calculation Results</h3>";
+            result += "<p>Sum: " + sum + "</p>";
+            result += "<p>Difference: " + difference + "</p>";
+            result += "<p>Product: " + product + "</p>";
+
+            // =====================
+            // Part D: Even or Odd
+            // =====================
+
+            let checkNumber = parseInt(prompt("Enter a number to check Even or Odd:"));
+
+            if (checkNumber % 2 === 0) {
+                result += "<p>The number " + checkNumber + " is Even.</p>";
+            } else {
+                result += "<p>The number " + checkNumber + " is Odd.</p>";
+            }
+
+            // Show everything inside the box
+            document.getElementById("output").innerHTML = result;
+        }
+
+    </script>
+
+</body>
+
+</html>
