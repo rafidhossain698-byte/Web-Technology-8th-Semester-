@@ -1,14 +1,14 @@
 // Getting elements
-let formBox = document.getElementById("student-form");
-let inputName = document.getElementById("student-name");
-let inputRoll = document.getElementById("student-roll");
-let studentList = document.getElementById("student-list");
+let formBox = document.getElementById("form-student");
+let inputName = document.getElementById("name");
+let inputRoll = document.getElementById("roll");
+let studentList = document.getElementById("list");
 
-let totalDisplay = document.getElementById("total");
-let attendanceDisplay = document.getElementById("attendance");
+let totalDisplay = document.getElementById("count");
+let attendanceDisplay = document.getElementById("status");
 
-let addButton = document.getElementById("add-btn");
-let searchInput = document.getElementById("search");
+let addButton = document.getElementById("btn-add");
+let searchInput = document.getElementById("search-box");
 
 let studentData = [];
 
@@ -129,7 +129,7 @@ updateAttendanceCount();
 
 // Total students
 function updateTotal(){
-totalDisplay.innerText = "Total students: " + studentData.length;
+totalDisplay.innerText = "Total Students: " + studentData.length;
 }
 
 // Attendance calculation
@@ -139,7 +139,7 @@ let presentCount = studentData.filter(x => x.present).length;
 let absentCount = studentData.length - presentCount;
 
 attendanceDisplay.innerText =
-"Present: " + presentCount + " , Absent: " + absentCount;
+"Present: " + presentCount + " | Absent: " + absentCount;
 
 }
 
@@ -147,7 +147,7 @@ attendanceDisplay.innerText =
 searchInput.addEventListener("input", displayStudents);
 
 // Sort students A-Z
-document.getElementById("sort-btn").onclick = ()=>{
+document.getElementById("btn-sort").onclick = ()=>{
 
 studentData.sort((a,b)=> a.name.localeCompare(b.name));
 displayStudents();
@@ -155,7 +155,7 @@ displayStudents();
 };
 
 // Highlight first student
-document.getElementById("highlight-btn").onclick = ()=>{
+document.getElementById("btn-highlight").onclick = ()=>{
 
 let items = document.querySelectorAll(".student-item");
 
