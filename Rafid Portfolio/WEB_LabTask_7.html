@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAFID Portfolio</title>
+    <link rel="stylesheet" href="WEB_LabTask_7.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <h2 class="logo">RAFID HOSSAIN</h2>
+
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <button id="themeBtn">🌙</button>
+        </nav>
+    </header>
+
+    <!-- HOME -->
+    <section id="home" class="home">
+        <div class="home-container">
+
+            <div class="home-text">
+                <h1>Hello, I'm <span>Rafid</span></h1>
+                <h3>Web Developer</h3>
+                <p>I build clean and simple websites using HTML, CSS, and JavaScript.</p>
+
+                <div class="home-buttons">
+                    <button onclick="showMessage()">Hire Me</button>
+                    <a href="#" class="cv-btn">Download CV</a>
+                </div>
+            </div>
+
+            <div class="home-img">
+                <img src="images/profile.jpeg" alt="Profile">
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            I am a beginner developer focused on creating clean and user-friendly websites.
+        </p>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+        <h2>My Skills</h2>
+
+        <div class="skill-container">
+
+            <div class="card">
+                <div class="icon-box">
+                    <img src="icons/html.png" class="icon">
+                </div>
+                <p>HTML</p>
+            </div>
+
+            <div class="card">
+                <div class="icon-box">
+                    <img src="icons/css.png" class="icon">
+                </div>
+                <p>CSS</p>
+            </div>
+
+            <div class="card">
+                <div class="icon-box">
+                    <img src="icons/js.png" class="icon">
+                </div>
+                <p>JavaScript</p>
+            </div>
+
+            <div class="card">
+                <div class="icon-box">
+                    <img src="icons/python.png" class="icon">
+                </div>
+                <p>Python</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+
+        <form onsubmit="return submitForm()">
+            <input type="text" id="name" placeholder="Your Name">
+            <input type="email" id="email" placeholder="Your Email">
+            <textarea id="message" placeholder="Message"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+
+        <div class="socials">
+            <a href="#"><img src="icons/github.png" class="social-icon"></a>
+            <a href="#"><img src="icons/linkedin.png" class="social-icon"></a>
+            <a href="#"><img src="icons/facebook.png" class="social-icon"></a>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Rafid Hossain | Portfolio</p>
+    </footer>
+
+    <script src="WEB_LabTask_7.js"></script>
+</body>
+
+</html>
